@@ -15,16 +15,18 @@
             </ul>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-3" *ngFor="let item of ciclos">
-        <div class="card" style="width: 18rem;">
-            <img src="{{item.imagen|imagenes}}" class="card-img-top" alt="{{item.imagen}}">
-            <div class="card-body">
-                <h5 class="card-title">{{item.curso}} {{item.nombre | textosupper}}</h5>
-                <button class="btn btn-primary" (click)="detallesGrado('detallesciclos', item.curso, item.nombre)">Ver
-                    detalles</button>
+
+    <div class="row">
+        <div class="col-3" *ngFor="let item of ciclos">
+            <div class="card" style="width: 18rem;">
+                <img src="{{item.imagen|imagenes}}" class="card-img-top" alt="{{item.imagen}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.curso}} {{item.nombre | textosupper}}</h5>
+                    <button class="btn btn-primary"
+                        (click)="detallesGrado('detallesciclos', item.curso, item.nombre)">Ver
+                        detalles</button>
+                </div>
             </div>
         </div>
     </div>
