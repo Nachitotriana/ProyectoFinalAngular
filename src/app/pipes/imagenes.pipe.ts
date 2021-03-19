@@ -10,6 +10,7 @@ export class ImagenesPipe implements PipeTransform {
     if (value.length == 0) {
       return 'assets/images/angular.jpg'
     }
+
     return value;
   }
 
